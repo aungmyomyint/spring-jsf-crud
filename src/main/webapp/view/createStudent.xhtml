@@ -3,7 +3,8 @@
 <f:view xmlns="http://www.w3.org/1999/xhtml"
 	xmlns:f="http://xmlns.jcp.org/jsf/core"
 	xmlns:h="http://xmlns.jcp.org/jsf/html"
-	xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:of="http://omnifaces.org/functions" xmlns:o="http://omnifaces.org/ui">
 	<h:head>
 		<h:outputStylesheet name="bootstrap/bootstrap.css"
 			library="student-crud"></h:outputStylesheet>
@@ -39,6 +40,8 @@
 					<h:inputText id="studentEmail"
 						value="#{studentRegisterActionBean.studentRegisterDto.studentEmail}"
 						class="form-control" requiredMessage="Please enter email" required="true">
+						<o:validator validatorId="javax.faces.RegularExpression" pattern="^[_A-Za-z0-9-]+(\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\.[A-Za-z0-9-]+)*(\.[A-Za-z]{2,6})$"
+							message="Email is invalid" />
 					</h:inputText>
 					<h:message for="studentEmail" style="color:red"></h:message>
 				</div>

@@ -17,7 +17,7 @@
 		<javax.servlet.servlet-api>3.0.1</javax.servlet.servlet-api>
 		<javax.el.el-api>3.0.0</javax.el.el-api>
 		<com.sun.faces>2.2.8-02</com.sun.faces>
-		<commons-io>2.2</commons-io>
+		<org.omnifaces>1.12.1</org.omnifaces>
 	</properties>
 
 	<dependencies>
@@ -91,11 +91,15 @@
 			<artifactId>HikariCP</artifactId>
 			<version>${com.zaxxer}</version>
 		</dependency>
-		
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 			<version>${mysql}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.omnifaces</groupId>
+			<artifactId>omnifaces</artifactId>
+			<version>${org.omnifaces}</version>
 		</dependency>
 	</dependencies>
 
