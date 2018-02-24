@@ -18,7 +18,7 @@ import com.amm.sample.stds.service.StudentSearchService;
 public class StudentSearchActionBean extends BaseBean implements Serializable {
 
 	/**
-	 * 
+	 * serialVersionUID
 	 */
 	private static final long serialVersionUID = -1421878557124226751L;
 
